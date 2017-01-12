@@ -54,6 +54,7 @@
     if (config.patternLab.scssToJson) {
       // turns scss files full of variables into json files that PL can iterate on
       gulp.task('pl:scss-to-json', function (done) {
+        console.log(config.patternLab.scssToJson);
         config.patternLab.scssToJson.forEach(function (pair) {
           var scssVarList = _.filter(fs.readFileSync(pair.src, 'utf8').split('\n'), function (item) {
             return _.startsWith(item, pair.lineStartsWith);
