@@ -10,6 +10,9 @@ module.exports = function(gulp, config) {
   var defaultConfig = require('./gulp-config');
   var config = _.defaultsDeep(config, defaultConfig);
 
+  // Mainspring - Require by Dir
+  var requireDir = require('require-dir');
+
   // scripts
   var concat = require('gulp-concat');
   var uglify = require('gulp-uglify');
@@ -33,6 +36,9 @@ module.exports = function(gulp, config) {
 
   // Tests
   require('./gulp-tasks/gulp-tests.js')(gulp, config, tasks);
+
+  requireDir('./gulp-tasks/tasks', { recurse: true });
+
 
   /**
    * Script Task

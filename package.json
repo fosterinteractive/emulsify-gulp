@@ -38,5 +38,8 @@
     "singularitygs": "^1.7.0",
     "sync-exec": "~0.5.0",
     "webpagetest": "^0.3.4"
+  },
+  "devDependencies": {
+    "require-dir": "^0.3.1"
   }
 }
