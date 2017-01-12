@@ -37,9 +37,13 @@
     "sassdoc": "^2.1.20",
     "singularitygs": "^1.7.0",
     "sync-exec": "~0.5.0",
-    "webpagetest": "^0.3.4"
+    "webpagetest": "^0.3.4",
+    "gulp-help": "^1.6.1",
+    "require-dir": "^0.3.1",
+    "sass-toolkit": "^2.10.2",
+    "require-dir": "^0.3.1"
   },
   "devDependencies": {
-    "require-dir": "^0.3.1"
+
   }
 }
